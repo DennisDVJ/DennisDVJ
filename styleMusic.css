@@ -1,20 +1,20 @@
-body{
-  background: url(images/BlackStars.png) no-repeat center center fixed; 
-  background-size: cover;
-  height: 100%;
+  body{
+    background: url(images/BlackStarsSmall.jpg) no-repeat center center fixed; 
+    background-size: cover;
+    height: 100%;
 }
 
 @keyframes dropHeader {
   0% {
     opacity: 0;
     transform: translate(50%, 0);
-    position: absolute;
+    position: relative;
     top: 0%;
     left: 0%;
 }
   100% {
     transform: translate(0, 0);
-    position: absolute;
+    position: relative;
     top: 0%;
     left:0%;
     opacity: 1;
@@ -27,12 +27,12 @@ body{
   margin: auto;
   list-style-type: none;
   text-align: center;
-  padding: 0px;
+  padding: 50px 0px 10px 0px;
 }
 
 .menu-elements{
   display: inline-block;
-  padding: 15px;
+  padding: 0px 15px;
   text-align: center;
   box-shadow: 0px 0px 0px #000000;
 }
@@ -41,7 +41,7 @@ body{
 .menu-text{
   font-family: 'Anton', sans-serif;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 30px;
   color: white;
   background-color: transparent;
   border: 5px solid rgba(0,0,0,0);
@@ -57,26 +57,29 @@ body{
 }
 
 .header{
-  padding: 50px;
   width: 100%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+.whitebackground{ 
+    background: url(images/concretewall.jpg) center center; 
+    padding: 20px 0px;
+    margin: 50px 0px;
+    box-shadow: 8px 8px 15px RGBa(0,0,0,0.50);
+
 }
 
 h1 {
   font-family: 'Anton', sans-serif;
   font-weight: normal;
-  font-size: 40px;
-  color: white;
+  font-size: 60px;
+  color: black;
   text-align: center;
-  padding: 20px;
 }
 
 h2 {
   font-family: 'Anton', sans-serif;
   font-weight: normal;
-  font-size: 40px;
+  font-size: 60px;
   color: white;
   text-align: center;
   padding: 20px;
@@ -86,44 +89,51 @@ h2 {
   width: 100%;
   display: block;
   margin: 0 auto;
+  text-align: center;
 }
 
-#videoContainerHighlight{ 
-  position: relative;
-  margin: auto;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 0);
+iframe{
+  max-width: 100%;
   padding: 30px;
 }
 
 #videoContainerLeft{ 
-  position: relative;
-  margin: auto;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 0);
   padding: 30px;
 }
 
 p {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Droid Sans', sans-serif;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
   color: white;
+  font-stretch: expanded;
   text-align: center;
 }
 
-.sizeTextFrame{ 
-  width: 560px;
-  height: 315px;
-  padding: 30px;
+.blacktext { 
+ color: black;
+}
+
+.colcentered { 
+  float: none;
+  margin: 0 auto;
+  width: 60%;
 }
 
 p.verticalCenterText{
   position: relative;
   margin: auto;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding: 45px 20px;
+  }
+
+  @media screen and (min-width: 769px) {
+  body{
+    background: url(images/BlackStarsMedium.jpg) no-repeat center center fixed; 
+  }
+}
+
+@media screen and (min-width: 1024px) {
+    body{
+      background: url(images/BlackStarsLarge.jpg) no-repeat center center fixed; 
+  }
 }
